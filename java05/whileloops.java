@@ -42,7 +42,18 @@ public class whileloops {
             System.out.print(rem);
             p = p / 10;
         }
-
+        System.out.println();
+        
+        // reverse the number
+        int rev =0;
+        int q = 16899;
+        System.out.print("Reverse of " + q + " is: ");
+        while (q > 0) {
+            int ld = q % 10;
+            rev = (rev*10) + ld;
+            q = q / 10;
+        }
+        System.out.println(rev);
         sc.close(); // Always close the scanner
     }
 }
