@@ -1,0 +1,38 @@
+public: So JVM can call it
+static: So no object is needed
+void: It doesn’t return anything
+main: Special method name recognized by JVM
+String[] args: Command-line arguments
+
+// static non static 
+Static variable	                Instance (non-static) variable
+
+Belongs to the class	        Belongs to the object
+Shared across all objects	    Unique to each object
+Declared with static	        No static keyword needed
+
+1] Static Method access static ;
+2] non-static access static method ;
+3] if non-static want to be in static need to create object of that class which is belong to;
+4] So when someone says “non-static variable”, the proper technical name is:  "Instance variable"
+
+// function without static and acces to main method
+// acces non static method in main method create object;
+public class Demo {
+
+    // Non-static method (instance method)
+    void greet() {
+        System.out.println("Hello from non-static method!");
+    }
+
+    public static void main(String[] args) {
+        // Create an object of the class
+        Demo obj = new Demo();
+
+        // Use the object to call the non-static method
+        obj.greet();  // ✅ works!
+    }
+}
+
+🧠 Real-world analogy:
+        Think of a TV remote (static). You can press the power button, but to change channels (non-static), you need an actual TV (object) to do it on.

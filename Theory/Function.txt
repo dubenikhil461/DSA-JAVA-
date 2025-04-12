@@ -1,0 +1,13 @@
+
+//FUNCTION THEORY 
+  ✅ Example (Valid Overloading):
+         int sum(int a)
+         float sum(float a)
+         ✅ Different parameter types — valid.
+
+  ❌ Example (Invalid Overloading):
+         int sum(int a, int b)
+         float sum(int a, int b)
+         ❌ Same parameters — return type doesn't help — invalid.
+         
+         
