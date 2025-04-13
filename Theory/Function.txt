@@ -10,4 +10,20 @@
          float sum(int a, int b)
          ❌ Same parameters — return type doesn't help — invalid.
          
-         
+// scoping
+BLOCK SCOPE;
+
+       {
+              int s = 0;
+       }
+       sout(s); ERROR => s not defined
+
+BUT IF=>
+
+       int s = 0;
+       {
+              sout(s);
+       }
+       sout(s); 
+       IT WILL BE WORK;
+
