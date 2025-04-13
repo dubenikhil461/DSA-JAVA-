@@ -1,19 +1,25 @@
 import java.util.*;
+
 public class Exercise12 {
 
-    public static boolean Isprime(int a){
-        if(a==2) return true;
-        else {
-            for(int i =2;i<=Math.sqrt(a);i++){
-                if(a%i==0) return false;
-            }
+    public static boolean Isprime(int x) {
+        if (x < 2) return false;
+        for (int i = 2; i <= Math.sqrt(x); i++) {
+            if (x % i == 0) return false;
         }
         return true;
     }
+
+    public static void Rangeofprime(int x) {
+        for (int i = 1; i <= x; i++) {
+            if (Isprime(i)) System.out.println(i);
+        }
+    }
+
     public static void main(String[] args) {
-        System.out.println("enter to check the prime number");
+        System.out.println("Enter a number to print all prime numbers up to that range:");
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        System.out.println(Isprime(n));
+        Rangeofprime(n);
     }
 }
