@@ -17,7 +17,7 @@ public class DecToBin {
     }
 
     public static void main(String[] args) {
-        System.out.println("Enter a binary number to decimal to Binary:");
+        System.out.println("Enter a decim number to decimal to Binary:");
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
         int result = DB(x);
