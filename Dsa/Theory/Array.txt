@@ -1,0 +1,20 @@
+ ARRAYS IS LIST OF ELEMENT OF SAME DATA TYPE
+ PLACED IN A CONTIGUOUS MEMORY ALLOCATAION
+ FOR CHAR => 1BYTE
+     INT  => 4BYTE
+ IT IS STATIC IF SIZE IS FIXED CANNOT FILL ELEMENTS MORE THAN FIXED SIZE
+ "NEW" KEYWORD FOR FINDING THE MEMORY FOR ARRAY
+
+ VERY IMPORTANT
+"Array always call by reference change in function also changes original "
+
+// SEARCH 
+
+ // LINEAR SEARCH 
+  "TIME COMPLEXITY IS O(n)"
+  
+ // BINARY SEARCH 
+  "TIME COMPLEXITY IS O(log n)"
+
+ // total number of pairs  n*(n-1)/2 O(n*n)
+ // total number of subarray n*(n+1)/2; O(n*n*n);

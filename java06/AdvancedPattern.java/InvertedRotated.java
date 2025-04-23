@@ -29,5 +29,6 @@ public class InvertedRotated {
         int n = sc.nextInt();
         PrintStars(n);
         PrintNumbers(n);
+        sc.close();
     }
 }
